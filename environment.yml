@@ -1,0 +1,14 @@
+name: msc-dissertation
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.10
+  - matplotlib
+  - faiss-cpu
+  - scikit-learn
+  - pytorch-cuda=11.8
+  - pytest
+  - git
+  - pylate
+prefix: /home/s2586627/miniconda3/envs/msc-dissertation
