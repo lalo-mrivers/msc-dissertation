@@ -10,8 +10,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 from datasets import load_from_disk, load_dataset
 
-# Importa o define aquí la función load_pre_train_medrag_pubmed
-# ...
+
 
 def load_pre_train_medrag_pubmed(max_samples: int,
                                  test_size:Union[float, int, None] = 0.2,
@@ -107,7 +106,7 @@ TEMPERATURE = 0.7
 TOP_P = 0.95
 OUTPUT_CSV = "medgemma_triplets_full.csv"
 MAX_SAMPLES = 12500
-MAX_TO_GENERATE_PER_RUN = None  # Cambia esto a, por ejemplo, 100 si quieres probar en lotes
+MAX_TO_GENERATE_PER_RUN = None  
 
 # ------------------- PROMPT -------------------
 def get_prompt(source_text: str) -> str:
