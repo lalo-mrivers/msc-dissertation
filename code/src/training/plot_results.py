@@ -1,8 +1,7 @@
-# plot_results.py
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Note the different CSV filename
+
 EVALUATION_CSV_PATH = './models/ModernBERT-base-InfoNCE-fine-tuned-cos/eval/Information-Retrieval_evaluation_dev_results.csv'
 OUTPUT_PLOT_PATH = 'training_mrr_curve.png'
 
@@ -16,7 +15,7 @@ def plot_ir_metric(csv_path: str, plot_path: str):
         print(f"Error: The file was not found at '{csv_path}'")
         return
 
-    #  Plot a relevant IR metric, like Mean Reciprocal Rank @ 10
+    #  METRIC
     metric_to_plot = 'cosine-MRR@10'#'cosine-MRR@10'#'cos_sim-mrr@10'
 
     plt.figure(figsize=(10, 6))

@@ -212,7 +212,7 @@ def generate_triplets(output_filename: str,
                 if triplet:
                     f.write(json.dumps(triplet) + '\n')
 
-    print(f"✅ Process finished. Output file: '{output_filename}'")
+    print(f" Process finished. Output file: '{output_filename}'")
 
     
 
