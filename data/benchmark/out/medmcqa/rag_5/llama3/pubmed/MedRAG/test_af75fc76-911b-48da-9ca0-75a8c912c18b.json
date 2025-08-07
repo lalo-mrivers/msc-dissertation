@@ -1,0 +1,1 @@
+["{\n\"step_by_step_thinking\": \"The SPIKES protocol is a method used for state-dependent spike detection. It's described in the document 'State dependent spike detection: validation'. This protocol uses different procedures to eliminate non-epileptic transients according to state, and varies detection sensitivity according to state.\",\n\"answer_choice\": C"]
